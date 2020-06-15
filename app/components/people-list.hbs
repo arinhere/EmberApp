@@ -1,0 +1,7 @@
+<ul>
+    {{#each @people as |scientist|}}
+        <li>
+           <button type="menu" {{ on 'click' (fn this.showPerson scientist) }}>{{scientist}}</button>
+        </li>
+    {{/each}}
+</ul>
